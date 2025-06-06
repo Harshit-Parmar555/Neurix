@@ -1,1 +1,92 @@
 @import "tailwindcss";
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-jetbrains-mono {
+  font-family: var(--font-jetbrains-mono);
+}
+
+.gradient {
+  background: conic-gradient(
+    from 230.29deg at 51.63% 52.16%,
+    #a78bfa 0deg,
+    /* Light purple */ #652cc8 60deg,
+    /* Vivid purple */ #6d28d9 120deg,
+    /* Deep purple */ #5b21b6 180deg,
+    /* Dark purple */ #7c3aed 240deg,
+    /* Vivid purple */ #a78bfa 300deg,
+    /* Light purple */ #f3e8ff 360deg /* Very light purple */
+  );
+}
+
+html,
+body {
+  background-color: black;
+  overflow-x: hidden;
+  color: white;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.MyGradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* Add to your globals.css or as a style in your component */
+.bg-radial-orange-left {
+  left: -15%;
+  top: 10%;
+  width: 400px;
+  height: 600px;
+  z-index: -10;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 60% 80% at 50% 50%,
+    #ffb86c 0%,
+    #ff8800 60%,
+    #ff4e00 100%,
+    transparent 100%
+  );
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.bg-radial-orange-right {
+  right: -15%;
+  bottom: 10%;
+  width: 400px;
+  height: 600px;
+  z-index: -10;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 60% 80% at 50% 50%,
+    #ffb86c 0%,
+    #ff8800 60%,
+    #ff4e00 100%,
+    transparent 100%
+  );
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+::-webkit-scrollbar {
+  display: hidden;
+}

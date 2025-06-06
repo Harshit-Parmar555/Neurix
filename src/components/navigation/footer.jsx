@@ -1,15 +1,18 @@
+// react / nextjs import
 import Link from "next/link";
+
+// assets import
 import { Heart } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col w-full max-w-7xl mx-auto bg-zinc-950 text-white p-6 sm:p-8 md:p-10 rounded-3xl border-orange-400/20 border-[1px] md:mb-12">
+    <footer className="flex flex-col w-full max-w-7xl mx-auto bg-zinc-950 text-white p-6 sm:p-8 md:p-10 rounded-3xl border-purple-400/20 border-[1px] md:mb-12 mt-20">
       <div className="flex flex-col gap-10 md:flex-row md:justify-between md:gap-8">
         {/* Logo & Status */}
         <div className="flex flex-col gap-4 md:gap-8 md:w-1/3">
           <div className="flex items-center gap-2">
             <span className="text-xl font-semibold">Neurix</span>
-            <span className="text-xs text-orange-400 ml-2 px-2 py-1 rounded bg-orange-400/10">
+            <span className="text-xs text-purple-400 ml-2 px-2 py-1 rounded bg-orange-400/10">
               AI Code Editor
             </span>
           </div>

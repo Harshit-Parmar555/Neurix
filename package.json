@@ -10,10 +10,15 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.8",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.16.0",
+    "lucide-react": "^0.511.0",
     "next": "15.3.3",
     "postcss": "^8.5.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {

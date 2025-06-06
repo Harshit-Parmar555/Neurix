@@ -1,9 +1,12 @@
 "use client";
 
+// react / next imports
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
+// assets imports
 import { FaWindows } from "react-icons/fa";
-import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
 export default function Navbar() {
@@ -33,14 +36,14 @@ export default function Navbar() {
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex flex-1 items-center justify-center gap-8 lg:gap-12 text-sm text-zinc-200 font-inter">
           <li>
-            <Link href="/" className="hover:text-orange-400 transition-colors">
+            <Link href="/" className="hover:text-purple-400 transition-colors">
               Home
             </Link>
           </li>
           <li>
             <Link
               href="/features"
-              className="hover:text-orange-400 transition-colors"
+              className="hover:text-purple-400 transition-colors"
             >
               Features
             </Link>
@@ -48,7 +51,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/pricing"
-              className="hover:text-orange-400 transition-colors"
+              className="hover:text-purple-400 transition-colors"
             >
               Pricing
             </Link>
@@ -56,7 +59,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/blog"
-              className="hover:text-orange-400 transition-colors"
+              className="hover:text-purple-400 transition-colors"
             >
               Blog
             </Link>
@@ -67,13 +70,13 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-2 lg:gap-3">
           <Link
             href="/signin"
-            className="bg-transparent text-white text-sm rounded-lg border border-zinc-800 px-4 py-2 font-inter cursor-pointer hover:border-orange-400 transition-colors"
+            className="bg-transparent text-white text-sm rounded-lg border border-zinc-800 px-4 py-2 font-inter cursor-pointer hover:border-purple-400 transition-colors duration-300 ease-in-out"
           >
             Sign In
           </Link>
           <a
             href="/download"
-            className="bg-white text-black text-sm rounded-lg px-4 py-2 font-inter cursor-pointer flex items-center gap-2 hover:bg-orange-400 transition-colors"
+            className="bg-white text-black text-sm rounded-lg px-4 py-2 font-inter cursor-pointer flex items-center gap-2 hover:bg-purple-400 transition-colors duration-300 ease-in-out"
             rel="noopener noreferrer"
           >
             <FaWindows /> Download
@@ -108,7 +111,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/"
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-purple-400 transition-colors"
                 onClick={() => setOpen(false)}
               >
                 Home
@@ -117,7 +120,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/features"
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-purple-400 transition-colors"
                 onClick={() => setOpen(false)}
               >
                 Features
@@ -126,7 +129,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/pricing"
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-purple-400 transition-colors"
                 onClick={() => setOpen(false)}
               >
                 Pricing
@@ -135,7 +138,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/blog"
-                className="hover:text-orange-400 transition-colors"
+                className="hover:text-purple-400 transition-colors"
                 onClick={() => setOpen(false)}
               >
                 Blog
@@ -145,14 +148,14 @@ export default function Navbar() {
           <div className="flex flex-col gap-4 w-4/5 max-w-xs mt-4">
             <Link
               href="/signin"
-              className="bg-transparent text-white text-base rounded-lg border border-zinc-800 px-4 py-3 font-inter cursor-pointer hover:border-orange-400 transition-colors text-center"
+              className="bg-transparent text-white text-base rounded-lg border border-zinc-800 px-4 py-3 font-inter cursor-pointer hover:border-purple-400 transition-colors text-center"
               onClick={() => setOpen(false)}
             >
               Sign In
             </Link>
             <a
               href="/download"
-              className="bg-white text-black text-base rounded-lg px-4 py-3 font-inter cursor-pointer flex items-center justify-center gap-2 hover:bg-orange-400 transition-colors"
+              className="bg-white text-black text-base rounded-lg px-4 py-3 font-inter cursor-pointer flex items-center justify-center gap-2 hover:bg-purple-400 transition-colors"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
             >
