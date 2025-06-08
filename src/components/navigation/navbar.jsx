@@ -69,7 +69,7 @@ export default function Navbar() {
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-2 lg:gap-3">
           <Link
-            href="/signin"
+            href="/auth"
             className="bg-transparent text-white text-sm rounded-lg border border-zinc-800 px-4 py-2 font-inter cursor-pointer hover:border-purple-400 transition-colors duration-300 ease-in-out"
           >
             Sign In

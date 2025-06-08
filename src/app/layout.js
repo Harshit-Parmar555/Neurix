@@ -42,9 +42,7 @@ export default function RootLayout({ children }) {
           "min-h-screen min-w-screen overflow-x-hidden bg-background text-foreground antialiased"
         )}
       >
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );
