@@ -74,13 +74,13 @@ export default function Navbar() {
           >
             Sign In
           </Link>
-          <a
-            href="/download"
+          <Link
+            href="/#"
             className="bg-white text-black text-sm rounded-lg px-4 py-2 font-inter cursor-pointer flex items-center gap-2 hover:bg-purple-400 transition-colors duration-300 ease-in-out"
             rel="noopener noreferrer"
           >
             <FaWindows /> Download
-          </a>
+          </Link>
         </div>
 
         {/* Hamburger */}

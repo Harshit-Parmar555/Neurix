@@ -3,6 +3,7 @@
 // nextjs / react imports
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // components
 import { Wrapper } from "../globals/wrapper";
@@ -44,9 +45,9 @@ export default function Hero() {
                 </button>
               </div>
               <div className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto bg-black text-white text-xs md:text-base rounded-lg border border-zinc-800 px-4 py-3 font-inter cursor-pointer text-center hover:border-purple-900 transition-colors duration-300 ease-in-out">
+                <Link href="/downloads" className="w-full sm:w-auto bg-black text-white text-xs md:text-base rounded-lg border border-zinc-800 px-4 py-3 font-inter cursor-pointer text-center hover:border-purple-900 transition-colors duration-300 ease-in-out">
                   All Downloads
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -56,7 +57,7 @@ export default function Hero() {
               className="relative flex items-center justify-center m-0 md:-m-2 rounded-xl bg-opacity-50 p-1 sm:p-2 backdrop-blur-3xl lg:-m-4 lg:rounded-2xl w-full"
               ref={imageRef}
             >
-              <div className="absolute inset-0 -z-10 h-full w-full blur-[80px] opacity-60 gradient" />
+              <div className="absolute inset-0 -z-10 h-full w-full  blur-[80px] opacity-40 gradient" />
 
               <div className="relative flex items-center justify-center w-full">
                 <motion.div style={{ scale }} className="z-10 relative w-full">

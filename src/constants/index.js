@@ -17,7 +17,6 @@ import { FiZap } from "react-icons/fi";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { GoRocket } from "react-icons/go";
 
-
 export const perks = [
   {
     icon: PiUserCircleBold,
@@ -145,7 +144,7 @@ export const plans = [
       { icon: <MdIntegrationInstructions />, text: "GitHub Integration" },
       { icon: <BsStars />, text: "Pro Templates & Snippets" },
     ],
-    buttonText : "Buy Now"
+    buttonText: "Buy Now",
   },
   {
     title: "Enterprise Plan",
@@ -162,5 +161,50 @@ export const plans = [
       { icon: <PiUsersThreeFill />, text: "Team Collaboration Tools" },
     ],
     buttonText: "Contact Sales",
+  },
+];
+
+export const downloads = [
+  {
+    platform: "macOS",
+    variant: "Mac Universal",
+    arch: "universal",
+    os: "mac",
+  },
+  {
+    platform: "macOS",
+    variant: "Mac x64",
+    arch: "x64",
+    os: "mac",
+  },
+  {
+    platform: "macOS",
+    variant: "Mac Arm64",
+    arch: "arm64",
+    os: "mac",
+  },
+  {
+    platform: "Windows",
+    variant: "Windows 10/11 (Arm64)",
+    arch: "arm64",
+    os: "windows",
+  },
+  {
+    platform: "Windows",
+    variant: "Windows 10/11 (x64)",
+    arch: "x64",
+    os: "windows",
+  },
+  {
+    platform: "Linux",
+    variant: ".AppImage (Arm64)",
+    arch: "arm64",
+    os: "linux",
+  },
+  {
+    platform: "Linux",
+    variant: ".AppImage (x64)",
+    arch: "x64",
+    os: "linux",
   },
 ];
